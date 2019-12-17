@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azimuth", "Azimuth\Azimuth.csproj", "{E9B8B781-62ED-477E-AB8B-10D775049529}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B8B781-62ED-477E-AB8B-10D775049529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B8B781-62ED-477E-AB8B-10D775049529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B8B781-62ED-477E-AB8B-10D775049529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B8B781-62ED-477E-AB8B-10D775049529}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDABE90D-9F4D-4CFA-AC59-57F663081062}
+	EndGlobalSection
+EndGlobal
