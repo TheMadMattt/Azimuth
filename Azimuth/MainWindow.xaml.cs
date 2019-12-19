@@ -233,7 +233,7 @@ namespace Azimuth
                 var tan = DegreeToRadians(_azimuthSystem.teta2); //zamiana stopni na radiany
                 _azimuthSystem.d2 = _azimuthSystem.B / (2 * Math.Tan(tan)); //obliczenie d2
                 D2TextBlock.Text = _azimuthSystem.d2.ToString("#0.00") + " Nm"; //przypisanie wartości do kontrolki na widoku
-               
+
             }
         }
 
@@ -270,12 +270,12 @@ namespace Azimuth
             if (!string.IsNullOrEmpty(Teta1TextBox.Text) && !string.IsNullOrEmpty(Teta2TextBox.Text) &&
                 _azimuthSystem.teta > 0)
             {
-                var first = Math.PI * Math.Pow(_azimuthSystem.r1,2);
+                var first = Math.PI * Math.Pow(_azimuthSystem.r1, 2);
                 var second = 0.5 * Math.Pow(_azimuthSystem.r2, 2);
                 var sinus = DegreeToRadians(_azimuthSystem.teta * 2);
                 var third = (2 * _azimuthSystem.teta) - Math.Sin(sinus);
 
-                _azimuthSystem.Qs = first - (second * third);
+                _azimuthSystem.Qs = Math.Abs(first - (second * third));
                 QsTextBlock.Text = _azimuthSystem.Qs.ToString("#0.00") + " Nm2";
             }
         }
