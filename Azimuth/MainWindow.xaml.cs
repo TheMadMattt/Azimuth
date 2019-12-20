@@ -270,10 +270,10 @@ namespace Azimuth
             if (!string.IsNullOrEmpty(Teta1TextBox.Text) && !string.IsNullOrEmpty(Teta2TextBox.Text) &&
                 _azimuthSystem.teta > 0)
             {
-                var first = Math.PI * Math.Pow(_azimuthSystem.r1, 2);
-                var second = 0.5 * Math.Pow(_azimuthSystem.r2, 2);
+                var first = Math.PI * Math.Pow(_azimuthSystem.r1, 2); // pi*r1^2
+                var second = 0.5 * Math.Pow(_azimuthSystem.r2, 2); // 0.5*r2^2
                 var sinus = DegreeToRadians(_azimuthSystem.teta * 2);
-                var third = (2 * DegreeToRadians(_azimuthSystem.teta)) - Math.Sin(sinus);
+                var third = (2 * DegreeToRadians(_azimuthSystem.teta)) - Math.Sin(sinus); // 2*teta - 2sin(2teta)
 
                 _azimuthSystem.Qs = Math.Abs(first - (second * third));
                 QsTextBlock.Text = _azimuthSystem.Qs.ToString("#0.00") + " Nm2";
