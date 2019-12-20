@@ -273,7 +273,7 @@ namespace Azimuth
                 var first = Math.PI * Math.Pow(_azimuthSystem.r1, 2);
                 var second = 0.5 * Math.Pow(_azimuthSystem.r2, 2);
                 var sinus = DegreeToRadians(_azimuthSystem.teta * 2);
-                var third = (2 * _azimuthSystem.teta) - Math.Sin(sinus);
+                var third = (2 * DegreeToRadians(_azimuthSystem.teta)) - Math.Sin(sinus);
 
                 _azimuthSystem.Qs = Math.Abs(first - (second * third));
                 QsTextBlock.Text = _azimuthSystem.Qs.ToString("#0.00") + " Nm2";
